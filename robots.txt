@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mictestingapp.netlify.app/sitemap.xml
+Sitemap: https://mic-testing-102f63.netlify.app/sitemap.xml
 
 # Mic Testing App — all pages are public and indexable
