@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO -->
+  <title>Mic Test Online — Test Your Microphone Instantly | Free & Private</title>
+  <meta name="description" content="Free online microphone test. Check if your mic is working, test audio input levels, and see real-time waveform visualizations. No downloads, no sign-up. 100% private — audio never leaves your browser.">
+  <meta name="keywords" content="mic test, microphone test, test my mic, test microphone, audio test, mic test online, online mic test, microphone checker, sound test, is my mic working, how to test mic, test your mic, camera and mic test, speaker test">
+  <meta name="author" content="Mic Testing App">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://mictestingapp.netlify.app/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mic Testing App">
+  <meta property="og:title" content="Mic Test Online — Test Your Microphone Instantly">
+  <meta property="og:description" content="Free online microphone test. Check if your mic is working, test input levels, and visualize audio signal in seconds. No downloads, no sign-up, 100% private.">
+  <meta property="og:url" content="https://mictestingapp.netlify.app/">
+  <meta property="og:image" content="https://mictestingapp.netlify.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mic Test Online — Test Your Microphone Instantly">
+  <meta name="twitter:description" content="Free online microphone test. Check if your mic is working in seconds. No downloads, 100% private.">
+  <meta name="twitter:image" content="https://mictestingapp.netlify.app/og-image.png">
+
+  <!-- PWA & Mobile -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#06060f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Mic Test">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎙️</text></svg>">
+
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Mic Testing App",
+        "url": "https://mictestingapp.netlify.app/",
+        "description": "Free online microphone testing tool"
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Mic Testing App",
+        "url": "https://mictestingapp.netlify.app/",
+        "description": "Free online microphone test tool. Check if your microphone is working, test input levels, and visualize audio signal in seconds. No downloads required.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern web browser with Web Audio API support (Chrome, Firefox, Edge, Safari 14.1+)",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": [
+          "Real-time microphone testing",
+          "Audio waveform visualization",
+          "Volume level meter",
+          "Multiple microphone device selection",
+          "Audio playback test (hear yourself)",
+          "Browser-based — no download required",
+          "100% private — no data uploaded"
+        ]
+      },
+      {
+        "@type": "HowTo",
+        "name": "How to Test Your Microphone Online",
+        "description": "Test whether your microphone is working using this free browser-based tool.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Open the Mic Testing App",
+            "text": "Open the Mic Testing App in a modern web browser such as Chrome, Firefox, Edge, or Safari."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Click Test My Microphone",
+            "text": "Click the 'Test My Microphone' button to begin the microphone test."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Allow microphone access",
+            "text": "When your browser asks for permission, click 'Allow' to grant microphone access."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Speak into your microphone",
+            "text": "Say something into your microphone. You will see a real-time waveform, volume meter, and audio signal status."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "View your results",
+            "text": "Click 'Stop Test' to see your results. The app will tell you if your microphone is working, if the signal is too quiet, or if no input was detected."
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I test my microphone online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click 'Test My Microphone' on this page, allow browser permission, and speak. You'll instantly see real-time audio visualization, volume levels, and a pass/fail result — all without downloading anything."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my microphone not working?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common reasons include: the microphone is not connected, browser permission is denied, the wrong microphone is selected in your OS settings, or another application is using the microphone. Try checking your system sound settings and browser permissions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this microphone test free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Mic Testing App is completely free. There are no downloads, no sign-ups, and no hidden fees. The tool runs entirely in your browser."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my audio recorded or uploaded?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. All audio processing happens locally in your browser using the Web Audio API. No audio data is ever uploaded, transmitted, or stored. When you stop the test, the microphone stream is immediately released."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What browsers support online microphone testing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mic Testing App works with Chrome, Firefox, Edge, and Safari 14.1 or later. A secure context (HTTPS or localhost) is required for microphone access."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I fix a quiet microphone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Try speaking closer to the microphone, increasing the microphone input level in your operating system's sound settings, making sure the correct microphone is selected, and checking that no noise suppression software is overly reducing your input."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I allow microphone permission in my browser?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In Chrome or Edge, click the lock icon in the address bar, go to Site settings, and set Microphone to Allow. In Firefox, click the lock icon and adjust Permissions. In Safari, go to Safari > Settings > Websites > Microphone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I test my microphone on my phone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Mic Testing App is fully responsive and works on mobile browsers including Chrome for Android, Safari for iOS (14.1+), and Firefox for Android. Simply open the site, tap 'Test My Microphone', and allow permission."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ========== Navigation ========== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" aria-label="Mic Testing App home">
+        <span class="logo-icon">🎙️</span>
+        <span class="logo-text">Mic Testing App</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#test-section" class="nav-link">Test Microphone</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#troubleshooting" class="nav-link">Troubleshooting</a>
+        <a href="#privacy" class="nav-link">Privacy</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle light/dark mode" title="Toggle theme">
+          <span class="theme-icon-dark">🌙</span>
+          <span class="theme-icon-light">☀️</span>
+        </button>
+        <button id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Toggle menu" aria-expanded="false">
+          <span class="hamburger-icon">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div id="mobile-menu-overlay" class="mobile-overlay hidden" aria-hidden="true">
+    <div class="mobile-menu">
+      <a href="#test-section" class="mobile-link">Test Microphone</a>
+      <a href="#how-it-works" class="mobile-link">How It Works</a>
+      <a href="#troubleshooting" class="mobile-link">Troubleshooting</a>
+      <a href="#privacy" class="mobile-link">Privacy</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========== Hero ========== -->
+    <section id="hero" aria-label="Introduction">
+      <h1 class="hero-title">Mic Testing App</h1>
+      <p class="hero-subtitle">Test your microphone instantly.</p>
+    </section>
+
+    <!-- ========== Test Section ========== -->
+    <section id="test-section" aria-label="Microphone test">
+
+      <!-- Device Selector -->
+      <div id="device-selector-wrapper" class="device-selector hidden">
+        <label for="mic-select" class="device-label">Microphone</label>
+        <div class="select-wrapper">
+          <select id="mic-select" aria-label="Select microphone device"></select>
+          <span class="select-arrow" aria-hidden="true">▾</span>
+        </div>
+      </div>
+
+      <!-- ---- Idle Card ---- -->
+      <div id="idle-card" class="card test-card" role="region" aria-label="Microphone test start">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="1" width="6" height="13" rx="3"/>
+            <path d="M19 10v1a7 7 0 0 1-14 0v-1"/>
+            <line x1="12" y1="18" x2="12" y2="23"/>
+            <line x1="8" y1="23" x2="16" y2="23"/>
+          </svg>
+        </div>
+        <h2 class="card-title">Microphone Test</h2>
+        <p class="card-desc">Check your microphone, input level, and audio signal in seconds.</p>
+        <button id="start-test-btn" class="btn btn-primary btn-lg" aria-label="Start microphone test">
+          <span aria-hidden="true">🎙️</span> Test My Microphone
+        </button>
+        <p class="privacy-inline" aria-label="Privacy notice">
+          <span aria-hidden="true">🔒</span> Your microphone audio stays in your browser and is not uploaded.
+        </p>
+      </div>
+
+      <!-- ---- Testing Card ---- -->
+      <div id="testing-card" class="card test-card hidden" role="region" aria-live="polite" aria-label="Microphone test active">
+
+        <!-- Status badge -->
+        <div id="test-status" class="status-badge" role="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="status-text">Requesting permission…</span>
+        </div>
+
+        <!-- Circular visualization -->
+        <div id="viz-container" aria-hidden="true">
+          <canvas id="viz-canvas"></canvas>
+          <div id="viz-mic-icon">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="1" width="6" height="13" rx="3"/>
+              <path d="M19 10v1a7 7 0 0 1-14 0v-1"/>
+              <line x1="12" y1="18" x2="12" y2="23"/>
+              <line x1="8" y1="23" x2="16" y2="23"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Waveform -->
+        <div id="waveform-section">
+          <h3 class="section-label">Waveform</h3>
+          <canvas id="waveform-canvas" aria-label="Audio waveform visualization"></canvas>
+        </div>
+
+        <!-- Volume Meter -->
+        <div id="volume-section">
+          <div class="meter-header">
+            <h3 class="section-label">Input Level</h3>
+            <span id="volume-pct" class="meter-value" aria-live="polite">0%</span>
+          </div>
+          <div class="meter-track" role="meter" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Microphone input level">
+            <div id="volume-fill" class="meter-fill"></div>
+          </div>
+        </div>
+
+        <!-- Mic Info -->
+        <div id="mic-info" class="info-grid">
+          <div class="info-row">
+            <span class="info-label">Microphone</span>
+            <span id="info-device" class="info-value">Detecting…</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Signal</span>
+            <span id="info-signal" class="info-value">Waiting…</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Input</span>
+            <span id="info-input" class="info-value">0%</span>
+          </div>
+        </div>
+
+        <!-- Playback Toggle -->
+        <div id="playback-section" class="playback-control">
+          <div class="playback-row">
+            <span class="playback-label"><span aria-hidden="true">🔊</span> Hear My Microphone</span>
+            <button id="playback-toggle" class="toggle-switch" role="switch" aria-checked="false" aria-label="Toggle microphone playback">
+              <span class="toggle-thumb"></span>
+            </button>
+          </div>
+          <p id="playback-warning" class="playback-warning hidden" role="alert">
+            ⚠️ You may hear feedback or echo when using speakers. Use headphones for best results.
+          </p>
+        </div>
+
+        <!-- Stop button -->
+        <button id="stop-test-btn" class="btn btn-danger btn-lg" aria-label="Stop microphone test">
+          ⏹ Stop Test
+        </button>
+      </div>
+
+      <!-- ---- Results Card ---- -->
+      <div id="results-card" class="card test-card hidden" role="region" aria-label="Microphone test results">
+        <div class="results-icon" aria-hidden="true" id="results-main-icon"></div>
+        <h2 class="card-title">Microphone Test Complete</h2>
+
+        <ul id="results-checklist" class="results-list" aria-label="Test results"></ul>
+
+        <div id="overall-status" class="overall-status" role="status"></div>
+
+        <button id="test-again-btn" class="btn btn-primary btn-lg" aria-label="Test microphone again">
+          🔄 Test Again
+        </button>
+      </div>
+
+      <!-- ---- Error Card ---- -->
+      <div id="error-card" class="card test-card hidden" role="alert" aria-label="Microphone error">
+        <div class="error-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="15" y1="9" x2="9" y2="15"/>
+            <line x1="9" y1="9" x2="15" y2="15"/>
+          </svg>
+        </div>
+        <h2 id="error-title" class="card-title">Microphone Error</h2>
+        <p id="error-message" class="card-desc"></p>
+        <button id="error-retry-btn" class="btn btn-primary btn-lg" aria-label="Try again">
+          🔄 Try Again
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========== How It Works ========== -->
+    <section id="how-it-works" aria-label="How it works">
+      <h2 class="section-heading">How It Works</h2>
+      <div class="steps-grid">
+        <div class="step-card card-glass">
+          <div class="step-num" aria-hidden="true">1</div>
+          <h3>Click Test</h3>
+          <p>Click <strong>"Test My Microphone"</strong> to begin.</p>
+        </div>
+        <div class="step-card card-glass">
+          <div class="step-num" aria-hidden="true">2</div>
+          <h3>Allow Access</h3>
+          <p>Grant microphone permission when your browser asks.</p>
+        </div>
+        <div class="step-card card-glass">
+          <div class="step-num" aria-hidden="true">3</div>
+          <h3>Speak</h3>
+          <p>Say something into your microphone.</p>
+        </div>
+        <div class="step-card card-glass">
+          <div class="step-num" aria-hidden="true">4</div>
+          <h3>See Results</h3>
+          <p>Instantly see if your microphone is working.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Troubleshooting ========== -->
+    <section id="troubleshooting" aria-label="Troubleshooting">
+      <h2 class="section-heading">Having Microphone Problems?</h2>
+      <div class="card card-glass troubleshoot-card">
+        <ol class="troubleshoot-list">
+          <li>Make sure your microphone is connected.</li>
+          <li>Check that your browser has microphone permission.</li>
+          <li>Check your operating system's microphone settings
+            <span class="subtle">(Windows Sound Settings or macOS System Preferences &gt; Sound)</span>.</li>
+          <li>Make sure the correct microphone is selected.</li>
+          <li>Try speaking closer to the microphone.</li>
+          <li>Try another browser if the microphone still doesn't work.</li>
+        </ol>
+        <button id="check-perms-btn" class="btn btn-secondary" aria-label="Check browser microphone permissions">
+          🔐 Check Browser Permissions
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== Browser Compatibility ========== -->
+    <section id="compatibility" aria-label="Browser compatibility">
+      <h2 class="section-heading">Browser Compatibility</h2>
+      <div class="card card-glass compat-card">
+        <p class="compat-intro">Microphone testing requires the Web Audio API and MediaDevices API. These are supported in all modern browsers on a secure context (HTTPS or localhost).</p>
+        <div class="browser-grid">
+          <div class="browser-item"><span class="browser-name">Chrome</span><span class="compat-ok">✅ Supported</span></div>
+          <div class="browser-item"><span class="browser-name">Firefox</span><span class="compat-ok">✅ Supported</span></div>
+          <div class="browser-item"><span class="browser-name">Edge</span><span class="compat-ok">✅ Supported</span></div>
+          <div class="browser-item"><span class="browser-name">Safari</span><span class="compat-ok">✅ Supported (14.1+)</span></div>
+        </div>
+        <p class="compat-note">ℹ️ A secure context (HTTPS or localhost) is required for microphone access.</p>
+      </div>
+    </section>
+
+    <!-- ========== Privacy ========== -->
+    <section id="privacy" aria-label="Privacy">
+      <h2 class="section-heading">Privacy</h2>
+      <div class="card card-glass privacy-card">
+        <div class="privacy-item">
+          <span class="privacy-icon" aria-hidden="true">🔒</span>
+          <div>
+            <h3>Browser-Controlled Permission</h3>
+            <p>Microphone permission is managed entirely by your browser. You are always in control.</p>
+          </div>
+        </div>
+        <div class="privacy-item">
+          <span class="privacy-icon" aria-hidden="true">💻</span>
+          <div>
+            <h3>Processed Locally</h3>
+            <p>All audio processing happens locally in your browser. Nothing leaves your device.</p>
+          </div>
+        </div>
+        <div class="privacy-item">
+          <span class="privacy-icon" aria-hidden="true">🚫</span>
+          <div>
+            <h3>No Uploads</h3>
+            <p>We do not upload, transmit, or store any microphone recordings.</p>
+          </div>
+        </div>
+        <div class="privacy-item">
+          <span class="privacy-icon" aria-hidden="true">👁️</span>
+          <div>
+            <h3>No Hidden Access</h3>
+            <p>The microphone is only accessed after you explicitly click "Test My Microphone."</p>
+          </div>
+        </div>
+        <div class="privacy-item">
+          <span class="privacy-icon" aria-hidden="true">🗑️</span>
+          <div>
+            <h3>No Storage</h3>
+            <p>Audio data is never saved. When you stop the test, the microphone stream is immediately released.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ (SEO + GEO) ========== -->
+    <section id="faq" aria-label="Frequently asked questions">
+      <h2 class="section-heading">Frequently Asked Questions</h2>
+      <div class="faq-list">
+
+        <details class="faq-item card-glass" open>
+          <summary class="faq-question">How do I test my microphone online?</summary>
+          <div class="faq-answer">
+            <p>Click <strong>"Test My Microphone"</strong> at the top of this page, allow your browser to access your microphone, and speak. You'll instantly see a real-time waveform, volume meter, and signal status. No downloads, no sign-up — everything runs directly in your browser using the Web Audio API.</p>
+          </div>
+        </details>
+
+        <details class="faq-item card-glass">
+          <summary class="faq-question">Why is my microphone not working?</summary>
+          <div class="faq-answer">
+            <p>The most common reasons are:</p>
+            <ul>
+              <li><strong>Microphone not connected</strong> — Make sure your microphone is plugged in or paired via Bluetooth.</li>
+              <li><strong>Browser permission denied</strong> — Click the lock icon in your browser's address bar and allow microphone access for this site.</li>
+              <li><strong>Wrong device selected</strong> — Your computer may default to a different audio input. Check your operating system's sound settings.</li>
+              <li><strong>Another app is using the mic</strong> — Close other apps like Zoom, Teams, or Discord that may be holding exclusive access.</li>
+              <li><strong>Hardware mute switch</strong> — Some headsets and laptops have a physical mute button. Make sure it's off.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="faq-item card-glass">
+          <summary class="faq-question">Is this microphone test free?</summary>
+          <div class="faq-answer">
+            <p>Yes, completely free. Mic Testing App is a free online tool with no downloads, no accounts, and no hidden costs. It works entirely in your browser.</p>
+          </div>
+        </details>
+
+        <details class="faq-item card-glass">
+          <summary class="faq-question">Is my audio recorded or uploaded?</summary>
+          <div class="faq-answer">
+            <p>No. All audio processing happens <strong>locally in your browser</strong> using the Web Audio API. No audio data is ever uploaded to a server, stored, or transmitted. When you stop the test, the microphone stream is immediately released. Your privacy is guaranteed by the architecture of the tool itself.</p>
+          </div>
+        </details>
+
+        <details class="faq-item card-glass">
+          <summary class="faq-question">What browsers support online microphone testing?</summary>
+          <div class="faq-answer">
+            <p>Mic Testing App works with all modern browsers:</p>
+            <ul>
+              <li><strong>Google Chrome</strong> (desktop &amp; Android)</li>
+              <li><strong>Mozilla Firefox</strong> (desktop &amp; Android)</li>
+              <li><strong>Microsoft Edge</strong> (desktop)</li>
+              <li><strong>Apple Safari</strong> (14.1+ on macOS &amp; iOS)</li>
+            </ul>
+            <p>A secure context (HTTPS or localhost) is required for microphone access.</p>
+          </div>
+        </details>
+
+        <details class="faq-item card-glass">
+          <summary class="faq-question">How do I fix a quiet microphone?</summary>
+          <div class="faq-answer">
+            <ul>
+              <li>Speak closer to the microphone (within 15–30 cm / 6–12 inches).</li>
+              <li>Increase the microphone input level in your OS sound settings.</li>
+              <li>Make sure the correct microphone device is selected.</li>
+              <li>Disable excessive noise suppression or noise cancellation software.</li>
+              <li>Check if your microphone has a hardware gain dial and turn it up.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="faq-item card-glass">
+          <summary class="faq-question">How do I allow microphone permission in my browser?</summary>
+          <div class="faq-answer">
+            <ul>
+              <li><strong>Chrome / Edge:</strong> Click the lock (or tune) icon in the address bar → Site settings → Set Microphone to "Allow."</li>
+              <li><strong>Firefox:</strong> Click the lock icon → Permissions → Check "Use the Microphone."</li>
+              <li><strong>Safari:</strong> Go to Safari → Settings → Websites → Microphone → Set this site to "Allow."</li>
+            </ul>
+            <p>If you previously blocked permission, you may need to reset it and reload the page.</p>
+          </div>
+        </details>
+
+        <details class="faq-item card-glass">
+          <summary class="faq-question">Can I test my microphone on my phone or tablet?</summary>
+          <div class="faq-answer">
+            <p>Yes. Mic Testing App is fully responsive and works on mobile devices. Supported mobile browsers include Chrome for Android, Safari for iOS (14.1+), and Firefox for Android. Simply open the site, tap <strong>"Test My Microphone"</strong>, and allow permission when prompted.</p>
+          </div>
+        </details>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer id="footer">
+    <p class="footer-brand">Mic Testing App — Test your microphone instantly.</p>
+    <p class="footer-note">Built with Web Audio API. No data leaves your browser.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
